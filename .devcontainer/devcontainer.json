@@ -1,0 +1,19 @@
+{
+	"name": "CASL2 devcontainer",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"workspaceMount": "source=${localWorkspaceFolder}/,target=/home/vscode/workspace,type=bind",
+	"workspaceFolder": "/home/vscode/workspace",
+	"extensions": [
+		"MaxfieldWalker.vscode-casl2-comet2"
+	],
+	"remoteUser": "vscode",
+	"runArgs": [
+		"-it",
+		"--privileged",
+		"--disable-content-trust=true",
+		"--net",
+		"host"
+	]
+}
