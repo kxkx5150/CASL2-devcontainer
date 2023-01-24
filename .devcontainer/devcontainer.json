@@ -10,10 +10,10 @@
 	],
 	"remoteUser": "vscode",
 	"runArgs": [
-		"-it",
+// 		"-it",
 		"--privileged",
-		"--disable-content-trust=true",
-		"--net",
-		"host"
+		"--disable-content-trust=true"
+// 		"--net",
+// 		"host"
 	]
 }
